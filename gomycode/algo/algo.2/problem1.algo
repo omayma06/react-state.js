@@ -1,0 +1,31 @@
+ALGORITHM data structure
+VAR
+    set1,set2 : ARRAY_OF INTEGER ;
+    i, j, set3 : INTEGER :=0;
+    k: BOOLEAN:fals ;
+BEGIN
+    FOR i FROM 0  TO set1.length-1 STEP step 1  DO
+    FOR j FROM 0 TO set2.length-1 STEP step 1 DO
+        IF (set1[i]=set2[j]) THEN
+            k=true
+            BREAK
+        END_IF
+
+    END_FOR
+       IF (k:=fals) THEN
+       set3:=set3+set1[i]
+       END_IF
+    END_FOR
+    FOR j FROM 0 TO set2.length-1 STEP step 1  DO
+    FOR i FROM 0 TO set1.length-1 STEP step 1  DO
+        IF (set2{j}) THEN
+            k=true
+            BREAK
+        END_IF
+        IF (k:=fals) THEN
+            set3:=set3+set2[j]
+        END_IF
+    END_FOR
+    END_FOR
+
+END
